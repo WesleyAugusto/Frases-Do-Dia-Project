@@ -20,11 +20,27 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title:Text("Frases Do Dia",
         ),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.black,
       ),
-      body: Container(),
-
-
+      body: Container(
+        padding: EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          border: Border.all(width: 3,color: Colors.black54)
+        ),
+        child: Row(
+          children: <Widget>[
+            Image.asset("images/frases.jpg"),
+            Text(
+              "Clique abaixo para gerar uma frese!",
+              textAlign: TextAlign.justify,
+              style: TextStyle(
+                fontSize: 17,
+                fontStyle: FontStyle.italic,
+            )
+            ),
+          ]
+        ) ,
+      ),
     );
   }
 }
